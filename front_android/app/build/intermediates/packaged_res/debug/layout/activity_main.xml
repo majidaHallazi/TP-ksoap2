@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+ <!-- Top Bar for Buttons -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#f5f5f5"
+            android:elevation="4dp">
+
+        <!-- Recharger Button -->
+        <Button
+                android:id="@+id/getAllAccountsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Reload"
+                android:textSize="12sp"
+                android:minWidth="0dp"
+                android:paddingHorizontal="12dp"
+                android:backgroundTint="#FF007F"
+                 />
+
+        <!-- Ajouter Button -->
+        <Button
+                android:id="@+id/addAccountButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Add"
+                android:textSize="12sp"
+                android:minWidth="0dp"
+                android:paddingHorizontal="12dp"
+                android:backgroundTint="#FF007F"
+                />
+
+        <!-- Supprimer Button -->
+        <Button
+                android:id="@+id/deleteAccountButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textSize="12sp"
+                android:minWidth="0dp"
+                android:paddingHorizontal="12dp"
+                android:backgroundTint="#FF007F"
+                 />
+    </LinearLayout>
+
+ 
+
+    <!-- RecyclerView for displaying accounts -->
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dp"
+            android:padding="8dp"
+            android:clipToPadding="false" />
+
+    <!-- Progress Bar -->
+    <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    <!-- Error Message -->
+    <TextView
+            android:id="@+id/errorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+
+  
+</FrameLayout>

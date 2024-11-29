@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compte_types">
+        <item>COURANT</item>
+        <item>EPARGNE</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="darker_gray">#4D4B4B</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Bank</string>
+    <style name="Base.Theme.Ksaop2" parent="Theme.Material3.DayNight">
+        
+        
+    </style>
+    <style name="Theme.Ksaop2" parent="Base.Theme.Ksaop2"/>
+</resources>
